@@ -27,7 +27,12 @@ class UploadServiceProvider extends ServiceProvider
             $this->registerPublishing();
         }
 
-        // $this->registerResources();
+        $this->registerResources();
+    }
+
+    private function registerResources()
+    {
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 
     protected function registerPublishing()

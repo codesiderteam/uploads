@@ -23,5 +23,12 @@
         "psr-4": {
             "Codesider\\Upload\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codesider\\Upload\\Providers\\UploadServiceProvider"
+            ]
+        }
     }
 }
