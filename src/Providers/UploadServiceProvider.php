@@ -23,8 +23,17 @@ class UploadServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if ($this->app->runningInConsole()) {
+            $this->registerPublishing();
+        }
+
+        // $this->registerResources();
+    }
+
+    protected function registerPublishing()
+    {
         $this->publishes([
             __DIR__.'/../../config/upload.php' => config_path('upload.php'),
-        ]);
+        ], "codesider-upload");
     }
 }
