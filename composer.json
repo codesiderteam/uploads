@@ -1,0 +1,14 @@
+{
+    "name": "codesider/uploads",
+    "description": "A usefull package upload files tools for uploading files and manipulation and compression data.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Codesider",
+            "email": "codesiderteam@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
