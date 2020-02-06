@@ -16,19 +16,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Codesider\\Upload\\": "src/"
+            "Codesider\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Codesider\\Upload\\Tests\\": "tests/"
+            "Codesider\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Codesider\\Upload\\Providers\\UploadServiceProvider"
-            ]
+                "Codesider\\Providers\\UploadServiceProvider"
+            ],
+            "aliases": {
+                "Upload": "Codesider\\Facades\\Upload"
+            }
         }
     }
 }

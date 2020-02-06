@@ -1,5 +1,7 @@
 <?php
 
+namespace Codesider;
+
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
